@@ -1,0 +1,30 @@
+﻿{
+  "name": "Demo_Fixed_v3",
+  "dataColors": ["#4A90E2","#50E3C2","#F080AE","#04FF5C","#E7F5FF","#744EC2","#D9B300","#D64550"],
+  "good": "#50E3C2",
+  "textClasses": {
+    "label": { "color": "#252B3E" },
+    "callout": { "color": "#164EFF", "fontSize": 36 },
+    "title": { "fontSize": 12 }
+  },
+  "foreground": "#0E48FF",
+  "neutral": "#A9BAF1",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "border": [{ "color": { "solid": { "color": "#EAEAEA" } }, "show": true, "radius": 10 }],
+        "visualHeader": [{ "foreground": { "solid": { "color": "#92AAF5" } } }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "items": [
+          {
+            "fontColor": { "solid": { "color": "#252B3E" } },
+            "background": { "solid": { "color": "#FFFFFF" } }
+          }
+        ]
+      }
+    }
+  }
+}
