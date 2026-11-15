@@ -1,4 +1,4 @@
-🌐 **Language:** [Ukrainian](README.uk.md) | English
+🌐 **Language:** [Ukrainian](README.ua.md) | English
 
 # Maven Hospital Healthcare Analytics | Power BI Dashboard
 
@@ -69,7 +69,7 @@ This project delivers an end-to-end analytical BI solution for the Maven Hospita
 * `Maven_Hospital_Analytics.pbix` — Main Power BI Desktop report file.
 * `data/` — Raw input datasets (CSV/Excel).
 * `screenshots/` — High-resolution screenshots of dashboard pages and the data model.
-* `README.md` — Project documentation and analytical insights.
+* `README.md` / `README.ua.md` — Project documentation and analytical insights.
 
 ---
 
