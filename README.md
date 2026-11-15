@@ -1,77 +1,77 @@
 # Maven Hospital Healthcare Analytics | Power BI Dashboard
 
-## 📌 Опис проєкту (Project Overview)
-Цей проєкт присвячений комплексній аналітиці медичних та операційних показників мережі клінік **Maven Hospital**. Головна мета — надати керівництву клініки та медичному персоналу інтерактивний інструмент для моніторингу завантаженості відділень, аналізу вартості лікування, демографії пацієнтів та ефективності надання послуг.
+## 📌 Project Overview
+This project delivers an end-to-end analytical BI solution for the Maven Hospital network. The primary goal is to provide hospital executives and medical staff with an interactive tool to monitor department workload, analyze treatment costs, explore patient demographics, and evaluate overall service efficiency.
 
 ---
 
 ## 🎬 Відео-демонстрація дашборду (Video Demo)
 
-▶️ **[Переглянути повну відео-демонстрацію дашборду на YouTube](https://youtu.be/1bE5GafITwc)**
+▶️ **[Watch the full dashboard video walkthrough on YouTube](https://youtu.be/1bE5GafITwc)**
 
-*У відео детально показано інтерактивність дашборду, роботу з фільтрами, зрізами даних та ключові аналітичні вкладки.*
+*The video demonstrates dashboard interactivity, dynamic filtering, cross-slicing, and key analytical views.*
 
 ---
 
-## 📐 Модель даних (Data Model)
+## 📐 Data Model
 
 ![Data Model Star Schema](screenshots/data_model.jpg)
-* **Архітектура:** Модель побудована за схемою **«Зірка» (Star Schema)**.
-* **Зв'язки:** Налаштовано односпрямовані зв'язки **1-до-багатьох (1-to-many)** між таблицями вимірів (Dimensions) та таблицями фактів (Facts).
-* **Оптимізація:** Включено спеціальну календарну таблицю для коректної роботи Time Intelligence функцій DAX.
+* **Architecture:** Built using a **Star Schema** design.
+* **Relationships:** Configured unidirectional **1-to-many** relationships connecting dimension tables to central fact tables.
+* **Optimization:** Integrated a dedicated Calendar table to support accurate **DAX Time Intelligence** calculations.
 
 ---
 
-## 📸 Візуалізації та структура дашборду (Dashboard Pages)
+## 📸 Dashboard Structure & Pages
 
-### 1. Загальний огляд (Executive Summary)
+### 1. Executive Summary
 ![Executive Summary](screenshots/executive_summary.jpg)
-* **Головні KPI:** Ключові операційні та фінансові показники клініки.
-* **Аналіз страхового покриття:** Розподіл витрат та виплат між пацієнтами та страховими компаніями.
-* **Гендерний аналіз відвідуваності:** Динаміка та обсяги візитів пацієнтів у розрізі статі (чоловіки/жінки).
+* **Core KPIs:** High-level operational and financial performance metrics.
+* **Insurance Coverage Analysis:** Breakdown of treatment costs and payouts between patients and insurance providers.
+* **Gender Attendance Trends:** Patient visit dynamics and volumes segmented by gender.
 
 ---
 
-### 2. Клінічний аналіз (Clinical Analysis)
+### 2. Clinical Analysis
 ![Clinical Analysis](screenshots/clinical_analysis.jpg)
-* **Причини звернень та процедури:** Аналіз найпопулярніших медичних аналізів, діагнозів та причин візитів.
-* **Матриця відвідуваності («Календар візитів»):** Теплова карта завантаженості клініки по днях тижня та роках (за обраний період).
-* **Загальна динаміка візитів (2011–2022):** Інтерактивна матриця з можливістю деталізації (Drill-down) за роками, кварталами та місяцями.
+* **Procedures & Diagnoses:** Analysis of the most frequent medical tests, diagnoses, and reasons for visits.
+* **Visit Heatmap ("Visit Calendar"):** Matrix heatmap highlighting clinic workload across days of the week and years.
+* **Historical Visit Trends (2011–2022):** Interactive drill-down matrix spanning years, quarters, and months.
 
 ---
 
-### 3. Демографія пацієнтів (Patient Demographics)
+### 3. Patient Demographics
 ![Patient Demographics](screenshots/patient_demographics.jpg)
-* **Соціально-демографічний профіль:** Розподіл пацієнтів за віковими групами, расовою приналежністю та сімейним станом.
-* **Географічний та соціальний контекст:** Дослідження структури пацієнтів для оптимізації соціальних та медичних програм клініки.
+* **Socio-Demographic Profile:** Distribution of patients by age groups, race/ethnicity, and marital status.
+* **Geographic & Social Context:** Insights into patient structure to help optimize the hospital's social and healthcare programs.
 
 ---
 
-### 4. Деталізація по пацієнтах (Patient Details)
+### 4. Patient Details
 ![Patient Details](screenshots/patient_details.jpg)
-* **Показники смертності:** Ключові KPI щодо кількості пацієнтів, їх статусу (живий/померлий) та рівня смертності (% mortality rate).
-* **Повний реєстр візитів:** Детальна таблиця зі списками пацієнтів, датами звернень та супровідною медичною інформацією.
+* **Mortality Metrics:** Key KPIs tracking total patient count, status (alive/deceased), and mortality rate (%).
+* **Comprehensive Visit Log:** Detailed table listing individual patient records, visit dates, and supporting clinical information.
 
 ---
 
-## 🛠 Технологічний стек (Tech Stack)
-* **BI Інструмент:** Power BI Desktop.
-* **Трансформація даних:** Power Query (M-Language).
-* **Моделювання даних:** Схема «Зірка» (Star Schema), зв'язки 1-до-багатьох.
-* **Аналітичні розрахунки:** DAX (Time Intelligence, CALCULATE, SUMX, Filter Contexts).
-* **Візуалізація:** Custom Tooltips, Bookmarks, Page Navigation, Cross-filtering, Matrix Drill-through.
+## 🛠 Tech Stack
+* **BI Tool:** Power BI Desktop
+* **ETL / Data Transformation:** Power Query (M-Language)
+* **Data Modeling:** Star Schema, 1-to-many relationships
+* **Analytics & Calculations:** DAX (Time Intelligence, `CALCULATE`, `SUMX`, Filter Contexts)
+* **Data Visualization & UX:** Custom Tooltips, Bookmarks, Page Navigation, Cross-filtering, Matrix Drill-through
 
 ---
 
-## 📁 Структура репозиторію (Repository Structure)
-* `Maven_Hospital_Analytics.pbix` — основний файл проєкту Power BI Desktop.
-* `data/` — вхідні датасети (CSV/Excel).
-* `screenshots/` — зображення сторінок дашборду та моделі даних.
-* `README.md` — документація проєкту.
+## 📁 Repository Structure
+* `Maven_Hospital_Analytics.pbix` — Main Power BI Desktop report file.
+* `data/` — Raw input datasets (CSV/Excel).
+* `screenshots/` — High-resolution screenshots of dashboard pages and the data model.
+* `README.md` — Project documentation and analytical insights.
 
 ---
 
-## 📊 Ключові висновки та аналітика (Key Insights)
-* **Завантаженість:** Виявлено пікові дні та години звернень пацієнтів для оптимізації графіку чергування лікарів.
-* **Фінанси:** Визначено найбільш витратні категорії процедур та частку покриття витрат страховими компаніями.
-* **Процеси:** Скорочення часу очікування та покращення розподілу ліжкового фонду клініки.
+## 📊 Key Insights
+* **Workload Optimization:** Identified peak days and hours for patient admissions, enabling data-driven scheduling for medical staff.
+* **Financial Efficiency:** Pinpointed the highest-cost procedure categories and evaluated the share of expenses covered by insurance providers.
+* **Operational Improvements:** Highlighted opportunities to reduce patient wait times and optimize hospital bed allocation.
