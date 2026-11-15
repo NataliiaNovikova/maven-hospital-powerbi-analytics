@@ -71,7 +71,7 @@ This project delivers an end-to-end analytical BI solution for the Maven Hospita
 
 ---
 
-## 📊 Key Insights
-* **Workload Optimization:** Identified peak days and hours for patient admissions, enabling data-driven scheduling for medical staff.
-* **Financial Efficiency:** Pinpointed the highest-cost procedure categories and evaluated the share of expenses covered by insurance providers.
-* **Operational Improvements:** Highlighted opportunities to reduce patient wait times and optimize hospital bed allocation.
+## 📊 Key Insights & Business Recommendations
+* **Financial & Insurance Structure:** Generated **$101.5M** in total revenue across **27,891** visits (**$3,639.68** average bill, **10% YoY** growth). Insurance payers cover only **30.6%** of total costs, highlighting a heavy out-of-pocket burden on patients and an opportunity to expand insurance partnerships.
+* **Peak Workload Optimization:** Heatmap analysis pinpointed severe traffic spikes on **Wednesdays at 19:00 (442 visits)** and early mornings on **Wednesdays (394)** and **Thursdays (353) at 05:00**. Reallocating staff shifts to these peak windows helps maintain the **15-minute** average visit time and prevents bottlenecks.
+* **Patient Demographics & Care Focus:** Patients aged **60+** represent **~69%** (674 out of 974) of the active patient base, with an overall mortality rate of **15.81%**. Prioritizing preventive care and chronic condition management for seniors will have the highest impact on clinical outcomes.
